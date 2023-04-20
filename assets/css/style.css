@@ -366,6 +366,14 @@ main {
   border-radius: 8px;
 }
 
+.info-content .location {
+  color: var(--white-2);
+  font-size: var(--fs-8);
+  font-weight: var(--fw-300);
+  letter-spacing: -0.25px;
+  margin-bottom: 0px;
+}
+
 .info_more-btn {
   position: absolute;
   top: -15px;
@@ -772,7 +780,7 @@ main {
 }
 
 .timeline-list span {
-  color: var(--vegas-gold);
+  color: var(--light-blue-1);
   font-weight: var(--fw-400);
   line-height: 1.6;
 }
@@ -794,7 +802,7 @@ main {
   left: -33px;
   height: 6px;
   width: 6px;
-  background: var(--text-gradient-yellow);
+  background: var(--text-gradient-blue);
   border-radius: 50%;
   box-shadow: 0 0 0 4px var(--jet);
 }
@@ -803,6 +811,15 @@ main {
   color: var(--light-gray);
   font-weight: var(--fw-300);
   line-height: 1.6;
+}
+
+.timeline-bullet {
+  color: var(--light-gray);
+  font-weight: var(--fw-300);
+  line-height: 1.6;
+  display: list-item;
+  list-style-type: circle;
+  margin-left: 30px;
 }
 
 
@@ -1158,7 +1175,7 @@ textarea.form-input::-webkit-resizer { display: none; }
   position: relative;
   width: 100%;
   background: var(--border-gradient-onyx);
-  color: var(--orange-yellow-crayola);
+  color: var(--light-blue-1);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1184,9 +1201,9 @@ textarea.form-input::-webkit-resizer { display: none; }
 
 .form-btn ion-icon { font-size: 16px; }
 
-.form-btn:hover { background: var(--bg-gradient-yellow-1); }
+.form-btn:hover { background: var(--text-gradient-blue); }
 
-.form-btn:hover::before { background: var(--bg-gradient-yellow-2); }
+.form-btn:hover::before { background: var(--text-gradient-blue); }
 
 .form-btn:disabled {
   opacity: 0.7;
@@ -1596,7 +1613,7 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .filter-item button:hover { color: var(--light-gray-70); }
 
-  .filter-item button.active { color: var(--orange-yellow-crayola); }
+  .filter-item button.active { color: var(--light-blue-1); }
 
   /* portfolio and blog grid */
 
@@ -1814,6 +1831,11 @@ textarea.form-input::-webkit-resizer { display: none; }
   .avatar-box img { width: 150px; }
 
   .info-content .name {
+    white-space: nowrap;
+    text-align: center;
+  }
+
+  .info-content .location {
     white-space: nowrap;
     text-align: center;
   }
