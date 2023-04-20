@@ -54,6 +54,13 @@
     hsl(35, 100%, 68%)
   );
 
+  
+  --text-gradient-blue: linear-gradient(
+    to right, 
+    hsl(232, 100%, 72%), 
+    hsl(244, 100%, 68%)
+  );
+
   /* solid */
 
   --jet: hsl(0, 0%, 22%);
@@ -68,6 +75,11 @@
   --light-gray: hsl(0, 0%, 84%);
   --light-gray-70: hsla(0, 0%, 84%, 0.7);
   --bittersweet-shimmer: hsl(0, 43%, 51%);
+  --dark-red: hsl(0, 49%, 8%);
+  --light-blue-1: hsl(226, 90%, 77%);
+  --dark-blue-1: hsl(243, 50%, 8%);
+  --dark-blue-2: hsl(240, 2%, 12%);
+  --hemi-orange: hsl(100%, 64.71%, 0);
 
   /**
    * typography
@@ -129,7 +141,7 @@ a { text-decoration: none; }
 
 li { list-style: none; }
 
-img, ion-icon, a, button, time, span { display: block; }
+img, ion-icon, a, button, time, span { display: block; border-radius: 20px; }
 
 button {
   font: inherit;
@@ -147,15 +159,15 @@ input, textarea {
 }
 
 ::selection {
-  background: var(--orange-yellow-crayola);
-  color: var(--smoky-black);
+  background: var(--light-blue-1);
+  color: var(--dark-blue-1);
 }
 
-:focus { outline-color: var(--orange-yellow-crayola); }
+:focus { outline-color: var(--light-blue-1); }
 
 html { font-family: var(--ff-poppins); }
 
-body { background: var(--smoky-black); }
+body { background: var(--dark-blue-1); }
 
 
 
@@ -192,7 +204,7 @@ article {
   justify-content: center;
   align-items: center;
   font-size: 16px;
-  color: var(--orange-yellow-crayola);
+  color: var(--light-blue-1);
   box-shadow: var(--shadow-1);
   z-index: 1;
 }
@@ -251,7 +263,7 @@ article.active {
   left: 0;
   width: 30px;
   height: 3px;
-  background: var(--text-gradient-yellow);
+  background: var(--text-gradient-blue);
   border-radius: 3px;
 }
 
@@ -266,7 +278,7 @@ article.active {
 }
 
 .has-scrollbar::-webkit-scrollbar-thumb {
-  background: var(--orange-yellow-crayola);
+  background: var(--light-blue-1);
   border-radius: 5px;
 }
 
@@ -360,7 +372,7 @@ main {
   right: -15px;
   border-radius: 0 15px;
   font-size: 13px;
-  color: var(--orange-yellow-crayola);
+  color: var(--light-blue-1);
   background: var(--border-gradient-onyx);
   padding: 10px;
   box-shadow: var(--shadow-2);
@@ -485,7 +497,7 @@ main {
 .navbar-link:hover,
 .navbar-link:focus { color: var(--light-gray-70); }
 
-.navbar-link.active { color: var(--orange-yellow-crayola); }
+.navbar-link.active { color: var(--light-blue-1); }
 
 
 
@@ -722,42 +734,6 @@ main {
 }
 
 
-/**
- * #clients 
- */
-
-.clients { margin-bottom: 15px; }
-
-.clients-list {
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
-  gap: 15px;
-  margin: 0 -15px;
-  padding: 25px;
-  padding-bottom: 25px;
-  overflow-x: auto;
-  scroll-behavior: smooth;
-  overscroll-behavior-inline: contain;
-  scroll-snap-type: inline mandatory;
-  scroll-padding-inline: 25px;
-}
-
-.clients-item {
-  min-width: 50%;
-  scroll-snap-align: start;
-}
-
-.clients-item img {
-  width: 100%;
-  filter: grayscale(1);
-  transition: var(--transition-1);
-}
-
-.clients-item img:hover { filter: grayscale(0); }
-
-
-
 
 
 /*-----------------------------------*\
@@ -980,7 +956,7 @@ main {
   --scale: 0.8;
 
   background: var(--jet);
-  color: var(--orange-yellow-crayola);
+  color: var(--light-blue-1);
   position: absolute;
   top: 50%;
   left: 50%;
@@ -1105,7 +1081,7 @@ main {
   transition: var(--transition-1);
 }
 
-.blog-post-item > a:hover .blog-item-title { color: var(--orange-yellow-crayola); }
+.blog-post-item > a:hover .blog-item-title { color: var(--light-blue-1); }
 
 .blog-text {
   color: var(--light-gray);
@@ -1164,7 +1140,7 @@ main {
 
 .form-input::placeholder { font-weight: var(--fw-500); }
 
-.form-input:focus { border-color: var(--orange-yellow-crayola); }
+.form-input:focus { border-color: var(--li); }
 
 textarea.form-input {
   min-height: 100px;
@@ -1772,7 +1748,7 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   body::-webkit-scrollbar { width: 20px; }
 
-  body::-webkit-scrollbar-track { background: var(--smoky-black); }
+  body::-webkit-scrollbar-track { background: var(--dark-blue-1); }
 
   body::-webkit-scrollbar-thumb {
     border: 5px solid var(--smoky-black);
