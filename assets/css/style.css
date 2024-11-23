@@ -1126,12 +1126,7 @@ main {
 
 /*image gallery*/
 div.gallery {
-  margin: 5px;
   border: 1px solid #ccc;
-  align-items: center;
-  float: left;
-  width: 180px;
-  height: auto ;
 }
 
 div.gallery:hover {
@@ -1139,7 +1134,6 @@ div.gallery:hover {
 }
 
 div.gallery img {
-  object-fit: cover;
   width: 100%;
   height: auto;
 }
@@ -1147,6 +1141,35 @@ div.gallery img {
 div.desc {
   padding: 15px;
   text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 
@@ -1911,5 +1934,22 @@ textarea.form-input::-webkit-resizer { display: none; }
 	 */
 
   .timeline-text { max-width: 700px; }
+
+
+  a:link {
+    color: rgb(0, 145, 255);
+    background-color: transparent;
+    text-decoration: none;
+  }
+  a:visited {
+    color: rgb(0, 145, 255);
+    background-color: transparent;
+    text-decoration: none;
+  }
+  a:hover {
+    color: rgba(0, 149, 255, 0.408);
+    background-color: transparent;
+    text-decoration: underline;
+  }
 
 }
